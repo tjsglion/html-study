@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid area</title>
+  <style>
+    #page{
+      display: grid;
+      width: 100%;
+      height: 250px;
+      grid-template-rows: 100px 1fr 30px;
+      grid-template-columns: 150px 1fr;
+      grid-template-areas: "head head"
+                           "nav main"
+                           "nav foot";
+    }
+    #page > header{
+      grid-area: head;
+      background-color: #8ca0ff;
+    }
+
+    #page > nav {
+      grid-area: nav;
+      background-color: #ffa08c;
+    }
+
+    #page > main {
+      grid-area: main;
+      background-color: #ffff64;
+    }
+
+    #page > footer {
+      grid-area: foot;
+      background-color: #8cffa0;
+    }
+  </style>
+</head>
+<body>
+  <section id="page">
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <main>Main area</main>
+    <footer>Footer</footer>
+  </section>
+</body>
+</html>
