@@ -6,6 +6,7 @@
     "acorn": "^6.2.1",
     "acorn-walk": "^6.2.0",
     "glob": "^7.1.4",
+    "koa": "^2.7.0",
     "loader-utils": "^1.2.3",
     "magic-string": "^0.25.3",
     "webpack": "^4.37.0",
